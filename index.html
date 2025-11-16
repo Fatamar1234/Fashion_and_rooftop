@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Fashion Experience</title>
+
+    <!-- Favicon + CSS -->
+    <link rel="icon" href="./img/dress_icon.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- 🌸 Navbar -->
+    <div class="navbar">
+      <ul>
+        <li><a href="#header_img">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Schedule">Schedule</a></li>
+        <li><a href="#links">Links</a></li>
+       <li><a id="theme-button">Toggle Dark Mode</a></li>
+      </ul>
+    </div>
+
+    <!-- 🌸 Header -->
+    <div id="need-incorner">
+      <img id="header_img_flower_container" src="./img/flower.png" />
+    </div>
+
+    <div id="image_center">
+      <img id="header_img" src="./img/inivitatuon.jpg" />
+    </div>
+
+    <h1>A Rooftop Fashion Experience</h1>
+    <h2>Style, sound, and skyline — one unforgettable night.</h2>
+
+    <div class="edit_button">
+      <button onclick="window.location.href='#about'" type="button">About</button>
+      <button type="button">Reserve Your Spot</button>
+    </div>
+
+    <!-- 🌸 About Section -->
+    <section id="about">
+      <h2>About the Event</h2>
+      <p>
+        Fashionable You is a rooftop experience where fashion, music, and culture
+        come together under the city skyline. This event celebrates self-expression
+        and creativity, inviting everyone to showcase their unique style in an
+        unforgettable atmosphere. Enjoy live music, great company, and a night
+        filled with inspiration, confidence, and connection. Join us as we turn the
+        rooftop into a runway of individuality and community.
+      </p>
+    </section>
+
+    <h4>What to Expect:</h4>
+    <ul>
+      <li>
+        <b>Bridgerton Themed Event:</b>
+        <i>Submit designs beforehand to be featured in our fashion show and wear
+          Bridgerton-inspired outfits for a classic 1800s rooftop vibe.</i>
+      </li>
+      <li><b>Food will be served — pastries and desserts!</b></li>
+      <li><b>Network with top designers and creatives in the industry!</b></li>
+    </ul>
+
+    <!-- 🌸 Schedule Section -->
+    <section id="Schedule">
+      <h2>Event Schedule</h2>
+      <div class="schedule_on">
+        <div class="header-item">
+          <img alt="Inspo of the vibe" src="./img/rooftop1.jpg" />
+          <h3>Friday, December 19th</h3>
+          <p>
+            Gather between 3:30 PM and 4:00 PM to settle in, find seats, and prepare
+            for an evening filled with fashion, music, and creativity.
+          </p>
+        </div>
+
+        <div class="header-item">
+          <img alt="Fashion show" src="./img/fashionshow2.jpg" />
+          <h3>Event Starts at 4:40 PM</h3>
+          <p>The fashion show will begin — lasting 30 to 40 minutes.</p>
+        </div>
+
+        <div class="header-item">
+          <img alt="Networking" src="./img/network.jpg" />
+          <h3>5:20 PM – Food & Networking</h3>
+          <p>
+            Enjoy delicious desserts and meet the designers behind the stunning
+            rooftop looks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+<!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+<div id="rsvp">
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+
+        <div class="rsvp-para">
+
+              <p>Join us for an unforgettable rooftop fashion experience! Please RSVP below to save your spot. The spots are limited...Soo Hurry Up!!!!</p>
+        </div>
+        <div class="rsvp-participants">
+            <p>🎟️ Fatama of New York has graciously confirmed attendance..</p>
+            <p>🎟️ Mia of New York has graciously confirmed attendance..</p>
+            <p>🎟️ Teresa of New York has graciously confirmed attendance..</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+       <label for="name">Name: </label>
+       <input type="text" id="name">
+      <label>Email: </label>
+       <input type="text" id="email">
+      <label>Phone Number: </label>
+       <input type="text" id="numbers">
+        <!-- Submit button -->
+      <button id="rsvp-button" type="button">Submit RSVP</button>
+
+        </form>
+    </div>      
+</div>
+
+
+    <!-- 🌸 Links Section -->
+    <section id="links">
+      <h2>Links</h2>
+      <a
+        class="link_bridgeten"
+        href="https://www.liverpoolmuseums.org.uk/stories/iconic-bridgerton-regencycore-fashion-moments"
+      >
+        <article>
+          <h3>Bridgerton Inspiration</h3>
+          <p>
+            Explore the most iconic Bridgerton fashion moments that brought
+            Regency-era style back into today’s trends — perfect inspiration for
+            your rooftop look.
+          </p>
+        </article>
+      </a>
+    </section>
+
+    <!--  Dark Mode Script -->
+    <script src="index.js"></script>
+  </body>
+</html>

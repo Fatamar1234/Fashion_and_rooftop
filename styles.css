@@ -1,0 +1,397 @@
+/*** You will not need this file until Unit 3 ***/
+
+
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+
+
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+
+  When To Modify:
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+     html {
+    scroll-padding-top: 50px; /* Adjust to match height of your navbar */
+}
+.navbar ul {
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    list-style-type: none;
+    overflow: hidden;
+    position : fixed;
+    top : 0px;
+    left: 0px;
+    width : 100%;
+    margin-bottom: 100px;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 10px;
+}
+
+.navbar ul li a {
+  display : block;
+  text-decoration : none;
+  color: #FFE4E1;
+  text-align: left;
+  padding : 5px;
+}
+
+input {
+    display: block;
+}
+.navbar ul li a:hover {
+    background-color :#a84c7a;
+    color:#d4c6c9;
+    text-decoration: underline;
+}
+
+
+html {
+    background-color: var(--bg-color);
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [ ] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+a:link {
+    color: #684481;          /* indigo for unvisited links */
+}
+a:visited{
+    color: #553175;          /* indigo for unvisited links */
+
+}
+a:hover {
+  color: #8c3a63;          /* when hovered */
+}
+a:active {
+  color: #722e52;          /* while being clicked */
+}
+body {
+      padding-top: 80px; /* adjust this to your navbar height */
+  
+    /* Add a background color or image */
+    background-color: var(--bg-color); /* see bottom of file for color variables */
+
+    /* Customize the default size, color, and font for text*/
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
+
+    /* Put space around the edges of the webpage */
+    margin: 50px;
+}
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+
+h1, h2, h3, h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ h1 {
+  background-color: #dcabda;
+  font-family: monospace;
+  font-size: 48px;
+  text-align: center; /* optional, makes it look clean */
+  padding: 10px; /* adds a little space around text */
+}
+
+h2 {
+     text-align: center;
+    
+}
+
+
+
+
+button {
+    /* Example Style, replace with your own! */
+     background-color: #D2CFF5;   /* button color */
+      font-size: 28px;
+   border: pink;              /* text color */
+    border: 1px solid #4B0082;;               /* hides the default border */
+     padding: 10px 20px;         /* space between button's text and edge */
+    border-radius: 20px;         /* curved edges instead of square */
+    cursor: pointer;           /* makes the cursor change when over button */
+    text-align: center;
+}
+.edit_button {
+  display: flex;               /* makes buttons line up next to each other */
+  justify-content: center;     /* centers them horizontally */
+  align-items: center;         /* centers them vertically (if container has height) */
+    gap: 10px;
+    
+}
+
+
+button:hover {
+    /* Make the button look different when the user hovers over it */
+}
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.header { /* Example A: This styles elements with class="header" */
+    
+}
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer { /* Example B: This styles elements with class="footer" */
+    
+}
+
+/*** Navbar [PLACEHOLDER] [ADDED IN UNIT 4] ***/
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+
+/*** RSVP Section ***
+
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+.error {
+  border-style: solid;
+  border-width: 2px;
+
+  /* Set border-color and background */
+}
+
+.rsvp-container {
+ 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+
+
+}
+.rsvp-para {
+  width : 55%;
+  padding-right: 10px;
+}
+.rsvp-participants{
+  width:45%;
+  padding-right: 10px;
+}
+
+/* Add other rsvp-related selectors here */
+
+
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+/* Default dark mode style */
+.dark-mode {
+
+}
+
+/* Example: Different dark mode style for h1 */
+.dark-mode h1 {
+    
+}
+
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+
+}
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+
+/* 4️⃣ The header image */
+#header_img {
+  width: 300px;
+  height: 300px;
+  border-radius: 6px;
+  object-fit: cover;   
+
+}
+#image_center{
+  display: flex; 
+  align-items: center;   
+   justify-content: center;     
+}
+#need-incorner{
+  position: fixed;   /* stay in one place */
+  top: 10px;            
+  left: 10px;
+  opacity: 0.5;         /*  see-through  */
+
+
+}
+#header_img_flower_container {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;  
+
+ 
+}
+#Schedule {
+  text-align: center;
+  margin: 50px;
+  color: #7c5e92;
+}
+.schedule_on {
+  display: flex;               /* makes children (images + text) line up horizontally */
+  justify-content: center;     /* centers them on the page */
+  align-items: flex-start;     /* keeps them aligned at the top */
+  gap: 40px;                   /* space between image boxes */
+  flex-direction: row;         /* keeps them on one line */
+}
+.header-item{
+  text-align: center;         
+  width: 250px;   
+  border: 12px  #4B0082;   /* purple border around each box */
+  border-radius: 10px;         /* soft corners for the box */
+  padding: 20px;               /* space inside the border */
+  background-color: #dabdf0;   /* light lavender background inside the border */
+
+
+}
+
+.header-item img {
+  width: 100%;                  /* fills its box */
+  height: 150px;                /* same height for all */
+  object-fit: cover;            /* crops nicely without stretching */
+  border-radius: 10px;          /* soft corners */
+   opacity: 0.9;   
+}
+.header-item p {
+  margin-top: 10px;           /* space between image and text */
+  font-size: 16px;
+  color: #1d0d29;             /* your purple tone */
+}
+.dark-mode {
+  background-color : rgb(98, 51, 98);
+  color : #c58fbc;
+ 
+}
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3 {
+    color: white;
+}
+.dark-mode Link{
+  color : Ivory;
+}
+
+
+:root {
+    /* Light Mode */
+    --bg-color: #a6a0cf;
+    --text-color: #231942;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
